@@ -28,6 +28,51 @@ body
 	margin-right: auto;
 }
 
+#mainHeader
+{
+	display: flex;
+	flex-direction: row;
+}
+
+
+.logo
+{
+	order: -1;
+	margin-left: 10px;
+	width: 200px
+}
+
+#burgerCon
+{
+	margin-bottom: 20px;
+	position: fixed;
+	top: 85px;
+	width: 100%;
+	background-color: rgba(255,255,255, 0.8);
+
+	/*off by default and toggled on with JS*/
+	display: none;
+}
+
+.show-mobile-nav
+{
+	display: block !important;
+}
+
+#burgerCon li
+{
+	padding: 20px;
+	border-top: thin solid #666;
+	text-align: center;
+
+}
+
+#burgerCon a 
+{
+	text-decoration: none;
+	color: #8ea86e;
+}
+
 /*tablet*/
 @media screen and (min-width: 660px){
 	#mainHeader
@@ -50,7 +95,6 @@ body
 	{
 		order: -1; /*make logo from right go to left*/
 		flex: 0 1 220px; /*change width of logo*/
-		margin-left: 10px;
 	}
 
 	/*Start working on the body*/
@@ -60,3 +104,9 @@ body
 		flex-direction: row;
 	}
 } /*End*/
+
+@media screen and (min-width: 1024px){
+	
+
+
+}
